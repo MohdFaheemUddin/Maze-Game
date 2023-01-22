@@ -1,0 +1,186 @@
+#mazeContainer {
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear; 
+    top: 80px;
+    opacity: 0;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 150px;
+  }
+  
+  #mazeContainer #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 4px rgb(255, 0, 0);
+  }
+  
+  input,
+  select {
+   transition-property: background-color opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);     
+    height: 50px;
+    width: 220px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    box-shadow: rgb(0, 252, 0) 5px 5px 0px 0px , rgb(0, 117, 252) 0px 0px 5px 5px;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  input:hover,
+  select:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  input:active,
+  select:active {
+    background-color: black;
+    background-image:linear-gradient(45deg,rgb(0, 252, 0),rgb(0, 117, 252)) ;
+  }
+  input:focus,
+  select:focus {
+    outline: none;
+   background-color: rgba(102, 59, 59, 0.418);
+    
+  }
+  
+  .custom-select {
+    display: inline-block;
+  }
+  .custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC");
+    background-repeat: no-repeat;
+    background-position: 125px center;
+  }
+
+  #Message-Container {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:  linear-gradient(-45deg, #ffffff, #fd0202 );
+    z-index: 1;
+  }
+  #Message-Container #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+  #message {
+    font: 1.3em sans-serif;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+  
+  #page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    height: 7in;
+    width: auto;
+    margin: auto;
+    
+  }
+  #page #menu {
+    margin: auto;
+    padding: 10px;
+    height: 65px;
+    box-sizing: border-box;
+  }
+  #page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+  }
+  #page #view {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .border {
+    border: 30px black solid;
+    border-radius: 2px;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 400px) {
+    input, select {
+      width: 120px;
+    }
+  }
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow:  rgb(0, 117, 252) 2px 2px 2px 2px, rgb(0, 252, 0) 0px 0px 5px 5px;
+}
+
+.strt{
+  padding-left: 20px;
+
+}
+
+::-webkit-scrollbar-thumb {
+scrollbar-color: yellow blue;
+scrollbar-color: #87ceeb #ff5621;
+scrollbar-color: auto;
+border: 3px;
+} 
+::-webkit-scrollbar{
+  width: 11px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(0, 117, 252);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #30ff00);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent, #ff0000);
+}
